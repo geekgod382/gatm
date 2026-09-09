@@ -1,0 +1,9 @@
+{
+  "name": "gatm-linux-x64",
+  "version": "1.0.0",
+  "description": "Native Linux x64 binary for gatm",
+  "os": ["linux"],
+  "cpu": ["x64"],
+  "files": ["bin"],
+  "license": "MIT"
+}

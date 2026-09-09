@@ -2,3 +2,5 @@
 node_modules/
 *.txt
 /.vs
+/packages/*/bin/
+*.exe

@@ -8,17 +8,19 @@
     },
     "files": [
         "bin",
-        "target/release/gatm",
-        "target/release/gatm.exe",
         "README.md"
     ],
     "license": "MIT",
-    "name": "gatm",
+    "name": "@geekgod382/gatm",
+    "optionalDependencies": {
+        "gatm-linux-arm64": "1.0.0",
+        "gatm-linux-x64": "1.0.0",
+        "gatm-win32-x64": "1.0.0"
+    },
     "scripts": {
         "build": "cargo build --release",
-        "test": "cargo test",
-        "prepack": "cargo build --release",
-        "prepublishOnly": "cargo build --release"
+        "build:native": "node scripts/build-native.js",
+        "test": "cargo test"
     },
     "version": "1.0.0"
 }

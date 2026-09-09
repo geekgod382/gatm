@@ -1,0 +1,9 @@
+{
+  "name": "gatm-win32-x64",
+  "version": "1.0.0",
+  "description": "Native Windows x64 binary for gatm",
+  "os": ["win32"],
+  "cpu": ["x64"],
+  "files": ["bin"],
+  "license": "MIT"
+}
