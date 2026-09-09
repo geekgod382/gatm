@@ -87,29 +87,3 @@ npm run build:native -- --target x86_64-pc-windows-msvc
 npm run build:native -- --target x86_64-unknown-linux-gnu
 npm run build:native -- --target aarch64-unknown-linux-gnu
 ```
-
-Publish each generated package in `packages/` before publishing the root
-package. In CI, build each target on its native runner, publish its package,
-then publish the root package. npm will install only the binary it needs.
-macOS is not currently supported.
-
-The root package is scoped because npm reserves unscoped names that are too
-similar to existing packages. Publish it publicly with:
-
-```
-npm publish --access public
-```
-
-On PowerShell, publish a native package from its own directory. For example,
-after building Windows x64:
-
-```
-Push-Location .\packages\gatm-win32-x64
-npm pack --dry-run
-npm publish
-Pop-Location
-```
-
-Do not use `npm pack --prefix .\packages\gatm-win32-x64` from the repository
-root; npm may pack the root package instead. The dry-run should show
-`gatm-win32-x64@1.0.0` and `bin/gatm.exe`.
