@@ -9,6 +9,8 @@ Tired of running multiple git commands? Just run `gatm` and it will automaticall
 npm install -g @geekgod382/gatm 
 ```
 
+The name gatm was similar to some other npm packages so I had to name it this way. But the usage stays same.
+
 ## Usage 
 
 Run these commands INSIDE project directory
