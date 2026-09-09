@@ -1,0 +1,10 @@
+[package]
+name = "gatm"
+version = "1.0.0"
+edition = "2021"
+description = "Git Automation Tool"
+license = "MIT"
+
+[[bin]]
+name = "gatm"
+path = "src/main.rs"

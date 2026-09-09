@@ -1,0 +1,24 @@
+{
+    "bin": {
+        "gatm": "bin/gatm.js"
+    },
+    "description": "Git Automation Tool",
+    "engines": {
+        "node": ">=16"
+    },
+    "files": [
+        "bin",
+        "target/release/gatm",
+        "target/release/gatm.exe",
+        "README.md"
+    ],
+    "license": "MIT",
+    "name": "gatm",
+    "scripts": {
+        "build": "cargo build --release",
+        "test": "cargo test",
+        "prepack": "cargo build --release",
+        "prepublishOnly": "cargo build --release"
+    },
+    "version": "1.0.0"
+}
